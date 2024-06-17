@@ -12,7 +12,7 @@ This project involves setting up a personal website using Amazon Web Services (A
 
 ## Structure
 
-![web1.0](/Users/leiber/Desktop/github/web1.0.png)
+![web1.0](./github-resource/structure.png)
 
 When developer pushes new commits to the GitHub remote, a webhook is triggered, which interacts with Jenkins deployed on the first EC2 instance. When Jenkins detects new commits, it wakes up SonarQube deployed on the second EC2 instance to perform code checks. Jenkins then copies the code repository to the third EC2 server, where Docker is deployed. It runs the Dockerfile in the project, based on nginx, to create an image and run it locally, associating port 80 of the server with the port the container is running on. This allows access to the website through port 80 of the third EC2 instance. Finally, AWS Route 53 is used to enable access to the EC2 instance through a personal domain name.
 
@@ -20,7 +20,7 @@ When developer pushes new commits to the GitHub remote, a webhook is triggered, 
 
 ## Website Screen Shot
 
-![webv1](/Users/leiber/Desktop/github/webv1.png)
+![webv1](./github-resource/web-screenshot.png)
 
 ## Solution Drawbacks
 
