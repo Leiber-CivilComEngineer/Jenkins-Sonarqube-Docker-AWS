@@ -26,6 +26,6 @@ When developer pushes new commits to the GitHub remote, a webhook is triggered, 
 
 1. EC2 instances with substantial computing and storage capacity incur high costs. 
 
-![image-20240617190326925](/Users/leiber/Library/Application Support/typora-user-images/image-20240617190326925.png)
+![image-20240617190326925](./github-resource/bill.png)
 
 2. The project is only using HTML and CSS, which are considered outdated technologies, resulting in a dated page style.
